@@ -1,70 +1,17 @@
-# Getting Started with Create React App
+# React Quiz App 
+Bu projede, React Hooks ve HTML&CSS kullanarak Ingilizcede ki tüm seviyeler için kelime bilginizi ölçebileceğiniz bir test uygulaması geliştirdim. Uygulamada Ingilizce A1, A2, B1, B2, C1 ve C2 olmak üzere her bir seviye için 20 soruluk bir kelime testi bulunmaktadır.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Test içerisinde her bir soru tek tek gösterilmektedir. Soruyu cevaplamanız için 30 saniye süreniz bulunmaktadır. 30 saniye içerisinde soruda verilen şıklardan birini işaretlemeniz ve diğer soruya geçmeniz gerekmektedir. Süre bitene kadar soruyu cevaplamazsanız cevabınız otomatik olarak boş sayılacak ve diğer soruya geçeceksiniz.
 
-## Available Scripts
+Test içerisinde ilerlemenizi görebilirsiniz. Test bittiğinde testi yüzde kaç oranında doğru cevapladığınızı görebilirsiniz. Tüm cevaplarınızın doğruluğunu kontrol edebilirsiniz. Yanlış cevap verdiğiniz soruyu bularak doğrusunu öğrenebilirsiniz. Her seviyedeki testi çözebilirsiniz.
 
-In the project directory, you can run:
+Testleri kolaydan zora doğru sırayla çözerek kendinizi test edebilir ve Ingilizcenizi geliştirebilirsiniz.
 
-### `npm start`
+Proje içerisine farklı başlıklarda ve konularda testler eklenebilmektedir.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Uygulama Linki
+Proje içerisinde bulunan Ingilizce kelime testlerini çözmek ve sonuçlarını görmek için [buraya](https://quiz.yasinakbulut.com) tıklayabilirsiniz. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Screenshots
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![image](https://github.com/yasinakbulut25/react-quiz-app/assets/62993659/aae9e1c1-41d2-4389-a5f1-1243b10aeb78)
