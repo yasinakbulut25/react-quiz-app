@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+:root {
+  --first-color: #6a5ae2;
+  --opacity-first: #796ae3;
+  --second-color: #ff8fa3;
+  --opacity-second: #fea5b5;
+  --text-color: #ffffff;
+  --dark-color: #0c0a2b;
+  --light-color: #d2cef6;
+  --bg-color: #e8e5fb;
+  --body-bg: #ffffff;
+  --value: attr(data-value);
+}
+.app-container {
+  width: 100%;
+  padding: 2rem 1rem;
+  height: 100vh;
+  background-color: var(--body-bg);
+}
+.error-link {
+  width: 300px;
+  margin: 2rem auto 0 auto;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  color: var(--text-color);
+  text-decoration: none;
+  background-color: var(--second-color);
+}
+@media screen and (max-width: 768px) {
+  .app-container {
+    padding: 0;
+  }
+}

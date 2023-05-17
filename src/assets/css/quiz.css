@@ -1,0 +1,299 @@
+.quiz-box {
+  max-width: 100%;
+  width: 560px;
+  margin: auto;
+  padding: 1.5rem;
+  background-color: var(--bg-color);
+  border-radius: 1rem;
+  height: calc(100vh - 4rem);
+  overflow: scroll;
+}
+.progress-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: var(--first-color);
+  border-radius: 1rem;
+  padding: 1.5rem 2rem 0 2rem;
+}
+.progress-top {
+  display: grid;
+  grid-template-columns: calc(100% - 70px) 70px;
+  gap: 0.5rem;
+  align-items: center;
+}
+.progress-title {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--light-color);
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+.progress-description {
+  font-size: 1rem;
+  color: var(--text-color);
+}
+.progress-icon {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  border-radius: 0.5rem;
+  background-color: var(--opacity-first);
+}
+.progress-icon i {
+  font-size: 1.25rem;
+  color: var(--text-color);
+}
+.progress-bottom {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 125px calc(100% - 125px);
+  align-items: center;
+  gap: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  background-color: var(--second-color);
+  padding: 1.5rem;
+  overflow: hidden;
+}
+.progress-bottom::before {
+  content: "";
+  position: absolute;
+  left: 40%;
+  bottom: -25px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 7px solid var(--opacity-second);
+  z-index: 0;
+}
+.progress-bottom::after {
+  content: "";
+  position: absolute;
+  left: 85%;
+  top: -25px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: var(--opacity-second);
+  z-index: 0;
+}
+.progress-circle {
+  --percentage: var(--value);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(
+      closest-side,
+      var(--second-color) 80%,
+      transparent 0 99.9%,
+      white 0
+    ),
+    conic-gradient(
+      var(--body-bg) calc(var(--percentage) * 1%),
+      var(--opacity-second) 0
+    );
+  z-index: 1;
+}
+.progress-big {
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+.progress-mini {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--text-color);
+  margin-top: 0.75rem;
+}
+.progress-detail {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-color);
+  z-index: 1;
+}
+.progress-circle.time {
+  --percentage: var(--value);
+  width: 70px;
+  height: 70px;
+  background: radial-gradient(
+      closest-side,
+      var(--bg-color) 85%,
+      transparent 0 99.9%,
+      white 0
+    ),
+    conic-gradient(
+      var(--first-color) calc(var(--percentage) * 1%),
+      var(--body-bg) 0
+    ) !important;
+}
+.question-box {
+  position: relative;
+  width: 100%;
+  margin: 1.5rem 0 0 0;
+  display: grid;
+  grid-template-columns: calc(100% - 70px) 70px;
+  align-items: center;
+  gap: 0.5rem;
+}
+.question-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--first-color);
+  margin-bottom: 0.5rem;
+}
+.question {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--dark-color);
+}
+.time {
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+.answers-boxes {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.answer-label {
+  width: 100%;
+  background-color: var(--body-bg);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  border: 2px solid transparent;
+  color: var(--dark-color);
+  text-transform: capitalize;
+  transition: all 0.25s;
+}
+.answer-label:active {
+  transform: scale(0.9);
+}
+.answer-label.selected {
+  background-color: var(--first-color);
+  color: var(--text-color);
+}
+.answer-label input {
+  outline: none;
+  border: none;
+  accent-color: var(--text-color);
+}
+.message {
+  width: 300px;
+  margin: 2rem auto 0 auto;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #feb37f;
+}
+.message.animation {
+  animation: message 1.5s ease-in-out infinite;
+}
+.message .icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 0.25rem;
+  display: grid;
+  place-items: center;
+  background-color: #ff9b55;
+}
+.message .icon i {
+  font-size: 1.25rem;
+  color: var(--text-color);
+}
+.message span {
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
+@keyframes message {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+.next {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  margin: 1.5rem 0 0 0;
+}
+.next-btn {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  align-items: center;
+  padding: 0.75rem 1.25rem;
+  color: var(--text-color);
+  background-color: var(--first-color);
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+.next-btn:active {
+  transform: scale(0.9);
+}
+.next-btn .icon {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  background-color: var(--opacity-first);
+  color: var(--text-color);
+  border-radius: 0.5rem;
+}
+.result-btn {
+  background-color: var(--second-color);
+}
+.result-btn .icon {
+  background-color: var(--opacity-second);
+}
+@media screen and (max-width: 768px) {
+  .quiz-box {
+    min-height: 100vh;
+    padding: 1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .quiz-box {
+    min-height: 100vh;
+    padding: 1rem;
+  }
+  .progress-bottom {
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+    gap: 1rem;
+    text-align: center;
+  }
+  .progress-bottom::after {
+    left: 75%;
+  }
+  .answers-boxes {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
